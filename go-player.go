@@ -37,6 +37,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "./index.html")
 	//http.FileServer(http.Dir("./"))
 	log.Print("index called")
+	log.Print(" request from: ", r.Referer())
 }
 
 func File(w http.ResponseWriter, r *http.Request) {
