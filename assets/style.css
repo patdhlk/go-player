@@ -84,6 +84,7 @@ body {
 	background: #eee;
 	padding: 5px;
 	border-radius: 5px;
+	left: 50%;
 }
 
 #divaudio {
@@ -94,8 +95,10 @@ body {
 
 }
 
-#addall {
-	background: #666666;
+#nextcontrol {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
 }
 
 audio {

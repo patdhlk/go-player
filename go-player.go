@@ -55,8 +55,7 @@ func File(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, fn)
 }
 
-func serveDirectory(fn string, w http.ResponseWriter,
-	r *http.Request) {
+func serveDirectory(fn string, w http.ResponseWriter, r *http.Request) {
 	defer func() {
 		if err, ok := recover().(error); ok {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
