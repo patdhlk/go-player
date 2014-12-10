@@ -4,10 +4,12 @@ body {
 #browser, #playlist {
 	border-radius: 10px;
 	padding: 5px 5px 3px 5px;
-	width: 300px;
+	width: 47%;
+	max-width: 100%;
 	float: left;
-	margin-right: 15px;
-	height: 500px;
+	margin-right: 2%;
+	height: auto;
+	min-height: 40px;
 	overflow: auto;
 }
 #browser a, #playlist a {
@@ -37,7 +39,7 @@ body {
 }
 
 #playlist a { 
-	background: #C44F7C; 
+	background: #37c871; 
 }
 
 #playlist a.playing { 
@@ -53,14 +55,9 @@ body {
 	color: white;
 }
 
-#playr {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-}
-
 #controls { 
-	margin-top: 10px; 
+	margin-top: 10px;
+	margin-bottom: 10px; 
 }
 
 #controls a {
