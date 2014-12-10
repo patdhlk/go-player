@@ -1,17 +1,35 @@
+h1 {
+	color: #55acee;
+	font-family: sans-serif;
+	text-align: center;
+}
+
 body {
 	font-family: sans-serif;
+	background: #595959; 
 }
-#browser, #playlist {
+
+#browser {
 	border-radius: 10px;
 	padding: 5px 5px 3px 5px;
 	width: 47%;
-	max-width: 100%;
+	max-width: 47%;
 	float: left;
-	margin-right: 2%;
 	height: auto;
 	min-height: 40px;
 	overflow: auto;
 }
+
+#playlist {
+	border-radius: 10px;
+	padding: 5px 5px 3px 5px;
+	width: 50%;
+	float: right;
+	height: auto;
+	min-height: 40px;
+	overflow: auto;
+}
+
 #browser a, #playlist a {
 	display: block;
 	cursor: pointer;
@@ -58,6 +76,7 @@ body {
 #controls { 
 	margin-top: 10px;
 	margin-bottom: 10px; 
+	left: 50%;
 }
 
 #controls a {
@@ -65,4 +84,22 @@ body {
 	background: #eee;
 	padding: 5px;
 	border-radius: 5px;
+}
+
+#divaudio {
+	width: 100%;
+	height: 60px;
+	background: #666666;
+	border-radius: 10px;
+
+}
+
+#addall {
+	background: #666666;
+}
+
+audio {
+	width: 100%;
+	margin-top: 15px;
+	background: #666666;
 }
