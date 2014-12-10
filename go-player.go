@@ -21,11 +21,13 @@ const (
 
 var (
 	addr = flag.String("http", ":8080", "http listen address")
-	root = flag.String("root", "/home/flo/nfs/flo/Music/", "music root")
+	root = flag.String("root", "music/", "music root")
 )
 
 func main() {
 	flag.Parse()
+	//to serve static files, *.css and *.js
+	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
 	http.HandleFunc("/", Index)
 	http.HandleFunc(filePrefix, File)
 	http.ListenAndServe(*addr, nil)
@@ -33,6 +35,7 @@ func main() {
 
 func Index(w http.ResponseWriter, r *http.Request) {
 	http.ServeFile(w, r, "./index.html")
+	//http.FileServer(http.Dir("./"))
 	log.Print("index called")
 }
 

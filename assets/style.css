@@ -23,13 +23,13 @@ body {
 }
 
 #browser a.dir { 
-	background: #BECD53; 
-	color: black; 
+	background: #55acee; 
+	color: white; 
 }
 
 #browser a.file { 
-	background: #5A640A; 
-	color: white; 
+	background: #e5b700;
+	color: blue;
 }
 
 #playlist { 
@@ -41,13 +41,22 @@ body {
 }
 
 #playlist a.playing { 
-	background: #3B1E6C; 
-	color: white; 
+	background: #4c9ad6; 
+	color: #ee9755; 
 }
 
-#browser a:hover, #playlist a:hover { 
-	background: #200A46; 
-	color: white; 
+#browser a:hover {
+	color: white;
+}
+
+#playlist a:hover {
+	color: white;
+}
+
+#playr {
+	position: fixed;
+	top: 50%;
+	left: 50%;
 }
 
 #controls { 

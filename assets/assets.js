@@ -90,5 +90,5 @@ function next() {
 	var $next = $('#playlist a.playing').next();
 	if ($next.length) play($next);
 }
-google.load("jquery", "1");
+google.load("jquery", "1.4.2");
 google.setOnLoadCallback(init);
