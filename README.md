@@ -17,6 +17,10 @@ In this dir. you have to create a subdirectory called music (go-player/music), i
 
 Now run the application, maybe (on Windows) "go-player.exe", and move to your browser and visit localhost:8080, then listen to your music
 
+screenshot
+----------
+![Alt text](https://raw.githubusercontent.com/pichuio/go-player/master/screenshot.png)
+
 license
 ---------
 
