@@ -1,0 +1,62 @@
+body {
+	font-family: sans-serif;
+}
+#browser, #playlist {
+	border-radius: 10px;
+	padding: 5px 5px 3px 5px;
+	width: 300px;
+	float: left;
+	margin-right: 15px;
+	height: 500px;
+	overflow: auto;
+}
+#browser a, #playlist a {
+	display: block;
+	cursor: pointer;
+	padding: 2px 4px;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 2px;
+}
+#browser { 
+	background: #ffcc00; 
+}
+
+#browser a.dir { 
+	background: #BECD53; 
+	color: black; 
+}
+
+#browser a.file { 
+	background: #5A640A; 
+	color: white; 
+}
+
+#playlist { 
+	background: #55acee; 
+}
+
+#playlist a { 
+	background: #C44F7C; 
+}
+
+#playlist a.playing { 
+	background: #3B1E6C; 
+	color: white; 
+}
+
+#browser a:hover, #playlist a:hover { 
+	background: #200A46; 
+	color: white; 
+}
+
+#controls { 
+	margin-top: 10px; 
+}
+
+#controls a {
+	cursor: pointer;
+	background: #eee;
+	padding: 5px;
+	border-radius: 5px;
+}
