@@ -93,7 +93,6 @@ func serveDirectory(fn string, w http.ResponseWriter, r *http.Request) {
 
 //an not needed HelperFunction
 func HelperFunction(){
-	
 	//some unnecessary code here to show github.com that the go-player is a go project - not a *.js project
 	e := new(Entry)
 	e.Name = "NotNecessary"
