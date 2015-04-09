@@ -4,7 +4,7 @@ GO-PLAYER
 a web-based html5 music player
 
 go-player serves the all files in the music directory. It's not recommended to use it outside
-your local network because there is currently no authentication implemented.
+your local network because there is currently no security and authentication implemented.
 
 build
 --------
